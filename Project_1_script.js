@@ -43,7 +43,7 @@ function newComment(comment) {
     
     list.innerHTML += `<li>${comment}</li>`;
     
-    deleteCommentButton.innerText = ✖️;
+    deleteCommentButton.innerText = "X"
     item.innerText = list
     item.append(deleteCommentButton)
     };
