@@ -38,12 +38,11 @@ const notes = document.querySelector("#comments-on-reviews");
 
 function newComment(comment) {
     const list = document.querySelector("#added-comments");
-    
+    const item = document.createElement("li");   
     const deleteCommentButton = document.createElement("p");
-    
-    list.innerHTML += `<li>${comment}</li>`;
-    
-    deleteCommentButton.innerText = "X"
-    item.innerText = list
-    item.append(deleteCommentButton)
+    deleteCommentButton.style = "display:inline";
+    deleteCommentButton.innerText = "✖️";
+    item.innerText = comment;
+    item.append(deleteCommentButton);
+    list.append(item);
     };
