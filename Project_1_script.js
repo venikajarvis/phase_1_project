@@ -23,6 +23,7 @@ const renderBestsellersList = (list) => {
         `
         reviewArrayItems.append(div);
     });
+
 }
 
 const notes = document.querySelector("#comments-on-reviews");
@@ -36,6 +37,13 @@ const notes = document.querySelector("#comments-on-reviews");
       });
 
 function newComment(comment) {
-      const list = document.querySelector("#added-comments");
-      list.innerHTML += `<li>${comment}</li>`;
+    const list = document.querySelector("#added-comments");
+    
+    const deleteCommentButton = document.createElement("p");
+    
+    list.innerHTML += `<li>${comment}</li>`;
+    
+    deleteCommentButton.innerText = ✖️;
+    item.innerText = list
+    item.append(deleteCommentButton)
     };
