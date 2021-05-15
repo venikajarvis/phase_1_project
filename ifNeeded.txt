@@ -1,0 +1,21 @@
+nytimes API:
+    API Access Key: HrjUV85s5oB3yvo20g4iS2hR8VBg4WD9
+    App ID: 042c7dd1-7a37-45f5-8a3f-f25bd13e4d01
+    Secret: MsMFlYj6qBFup426
+    Base URL: https://api.nytimes.com/svc/mostpopular/v2
+Links:
+    Bestsellers List of Toni Morrison's Books: https://api.nytimes.com/svc/books/v3/reviews.json?author=Toni+Morrison&api-key=HrjUV85s5oB3yvo20g4iS2hR8VBg4WD9
+    Most viewed articles past 30 days: https://api.nytimes.com/svc/mostpopular/v2/viewed/30.json?api-key=HrjUV85s5oB3yvo20g4iS2hR8VBg4WD9
+
+
+// L5-L setting up JS file
+    // L5: create function to fetch API data
+    // L6: create fetch request which returns a promise; (fetch takes one arguement & argument = path to what is being fetched)
+    // L7: promise is resolved with a response object - callback function created to take in response object (JSON (giant string that trasmits data 
+    //     over internet)) .json() takes JSON and turns it into JS Object 
+    // L8: After Parsing response body on the response object, we'll have data to render Bestsellers List's objects to the page; using dot notation to access the results array
+    // L11: Define renderBestsellersList as a function
+    // L13: choose which array items to render to page & in html doc, create individual elements for them
+    // L14: iterate over list & invoke a callback function for each iteration that will pass in individual object & create elements to be added to container.
+    // L15: create variable 
+    // L16:

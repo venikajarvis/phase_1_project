@@ -4,9 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>News For Views</title>
+    <title>Toni Morrison's NYT Bestseller Novels Book Review</title>
 </head>
 <body>
+    <h1>Toni Morrison | NYT Bestseller Book Reviews</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/0fgHk3DL37c" title="Toni Morrison Interview" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+    <form id="comments-on-reviews">
+        <label for="comment-input">Comments:</label>
+        <input type="text" id="comment-input" name="comment-input" placeholder="Input Notes Here">
+        <input type="submit" id= "submit-button" value="Add Comment">
+          <!-- above: added id to target this for the .preventDefault() event  -->
+      </form>
+  
+      <div id="list-of-notes">
+        <h2>Review Notes:</h2>
+        <ul id="added-comments"></ul>
+      </div>
+    
+    <div class = "reviewArrayItems"></div>
+
+    <div class = "Amazon"></div>
+    
     <script src="./Project_1_script.js"></script>
+
 </body>
 </html>
