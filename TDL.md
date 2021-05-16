@@ -22,8 +22,18 @@ Beloved: https://www.amazon.com/s?k=beloved+toni+morrison&ref=nb_sb_noss_2
 God Help the Child: https://www.amazon.com/s?k=God+Help+the+Child+toni+morrison&ref=nb_sb_noss_1
 The Source of Self-Regard: https://www.amazon.com/s?k=The+Source+of+Self-Regard+toni+morrison&ref=nb_sb_noss_2
 
-I could implement a delete button
 
-simple: render comment to page - click something that I can remove from page
 Turn the links into links (by using an anchor tag - displays as clickable link)
-use logic to render review.summary if it's not a empty string render, if it is render,
+
+function amazonBooks () {
+    const bookLinks = document.querySelector(".reviewArrayItems").getElementsByTagName("h2").innerHTML;
+    switch (bookLinks) {
+        case "Paradise":
+            
+            // DOES NOT WORK2: // <h2><a href="https://www.amazon.com/s?k=paradise+toni+morrison&crid=2M9E1VUIQQ78U&sprefix=paradise+toni%2Caps%2C156&ref=nb_sb_ss_ts-doa-p_1_13">Paradise</a></h2>
+            // DOES NOT WORK1: // <a href="https://www.amazon.com/s?k=paradise+toni+morrison&crid=2M9E1VUIQQ78U&sprefix=paradise+toni%2Caps%2C156&ref=nb_sb_ss_ts-doa-p_1_13">Paradise</a>
+            break;
+        default:
+            // bookLinks;
+}
+};

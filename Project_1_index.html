@@ -1,32 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Toni Morrison's NYT Bestseller Novels Book Review</title>
-</head>
-<body>
-    <h1>Toni Morrison | NYT Bestseller Book Reviews</h1>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/0fgHk3DL37c" title="Toni Morrison Interview" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    
-    <form id="comments-on-reviews">
-        <label for="comment-input">Comments:</label>
-        <input type="text" id="comment-input" name="comment-input" placeholder="Input Notes Here">
-        <input type="submit" id= "submit-button" value="Add Comment">
-          <!-- above: added id to target this for the .preventDefault() event  -->
-      </form>
-  
-      <div id="list-of-notes">
-        <h2>Review Notes:</h2>
-        <ul id="added-comments"></ul>
-      </div>
-    
-    <div class = "reviewArrayItems"></div>
 
-    <div class = "Amazon"></div>
-    
-    <script src="./Project_1_script.js"></script>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toni Morrison's NYT Bestseller Novels Book Review</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css" />
+  <link rel="stylesheet" href="./Project_1_style.css" />
+</head>
+
+<body>
+  <section class="hero is-warning">
+    <div class="hero-body">
+      <p class="title">
+        Toni Morrison | NYT Bestseller Book Reviews
+      </p>
+    </div>
+  </section>
+
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/0fgHk3DL37c" title="Toni Morrison Interview"
+    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen></iframe>
+
+  <form id="comments-on-reviews" autocomplete="off">
+    <label for="comment-input"></label>
+    <input class="input is-rounded" id="comment-input" name="comment-input" type="text" placeholder="Input Comments Here">
+    <input type="submit" id="submit-button" value="Add Comment">
+  </form>
+
+  <div id="list-of-notes">
+    <section class="section">
+    <h1>Comments on Reviews:</h1>
+    <ul id="added-comments"></ul>
+    </section>
+  </div>
+
+  <div class="reviewArrayItems">
+
+  </div>
+
+  <script src="./Project_1_script.js"></script>
 
 </body>
+
 </html>

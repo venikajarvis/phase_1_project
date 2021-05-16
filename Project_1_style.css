@@ -1,0 +1,136 @@
+head {
+    color:darkcyan; font: size 32px;
+  }
+
+#list-of-notes {
+    text-align: justify;
+    color:white;
+}
+/* .reviewArrayItems {
+    color:white;
+  } */
+
+body {
+    background-color: black; font: size 16px;
+  }
+
+.reviewArrayItems > div:nth-child(1) {
+    color:rgb(241, 197, 0);
+    margin: 30px;
+    border: 1px solid black;
+    outline: 4px solid rgb(255, 255, 255);
+    outline-offset: 10px;
+    margin-bottom: 3rem;
+}
+.reviewArrayItems > div:nth-child(2) {
+    color:rgb(241, 197, 0);
+    margin: 30px;
+    border: 1px solid black;
+    outline: 4px solid rgb(255, 255, 255);
+    outline-offset: 10px;
+    margin-bottom: 5rem;
+}
+.reviewArrayItems > div:nth-child(3) {
+    color:rgb(241, 197, 0);
+    margin: 30px;
+    border: 1px solid black;
+    outline: 4px solid rgb(255, 255, 255);
+    outline-offset: 10px;
+    margin-bottom: 5rem;
+}
+.reviewArrayItems > div:nth-child(4) {
+    color:rgb(241, 197, 0);
+    margin: 30px;
+    border: 1px solid black;
+    outline: 4px solid rgb(255, 255, 255);
+    outline-offset: 10px;
+    margin-bottom: 5rem;
+}
+.reviewArrayItems > div:nth-child(5) {
+    color:rgb(241, 197, 0);
+    margin: 30px;
+    border: 1px solid black;
+    outline: 4px solid rgb(255, 255, 255);
+    outline-offset: 10px;
+    margin-bottom: 5rem;
+}
+.reviewArrayItems > div:nth-child(6) {
+    color:rgb(241, 197, 0);
+    margin: 30px;
+    border: 1px solid black;
+    outline: 4px solid rgb(255, 255, 255);
+    outline-offset: 10px;
+    margin-bottom: 5rem;
+}
+.reviewArrayItems > div:nth-child(7) {
+    color:rgb(241, 197, 0);
+    margin: 30px;
+    border: 1px solid black;
+    outline: 4px solid rgb(255, 255, 255);
+    outline-offset: 10px;
+    margin-bottom: 5rem;
+}
+.reviewArrayItems > div:nth-child(8) {
+    color:rgb(241, 197, 0);
+    margin: 30px;
+    border: 1px solid black;
+    outline: 4px solid rgb(255, 255, 255);
+    outline-offset: 10px;
+    margin-bottom: 5rem;
+}
+.reviewArrayItems > div:nth-child(9) {
+    color:rgb(241, 197, 0);
+    margin: 30px;
+    border: 1px solid black;
+    outline: 4px solid rgb(255, 255, 255);
+    outline-offset: 10px;
+    margin-bottom: 5rem;
+}
+.reviewArrayItems > div:nth-child(10) {
+    color:rgb(241, 197, 0);
+    margin: 30px;
+    border: 1px solid black;
+    outline: 4px solid rgb(255, 255, 255);
+    outline-offset: 10px;
+    margin-bottom: 5rem;
+}
+.reviewArrayItems > div:nth-child(11) {
+    color:rgb(241, 197, 0);
+    margin: 30px;
+    border: 1px solid black;
+    outline: 4px solid rgb(255, 255, 255);
+    outline-offset: 10px;
+    margin-bottom: 5rem;
+}
+.reviewArrayItems > div:nth-child(12) {
+    color:rgb(241, 197, 0);
+    margin: 30px;
+    border: 1px solid black;
+    outline: 4px solid rgb(255, 255, 255);
+    outline-offset: 10px;
+    margin-bottom: 5rem;
+}
+.reviewArrayItems > div:nth-child(13) {
+    color:rgb(241, 197, 0);
+    margin: 30px;
+    border: 1px solid black;
+    outline: 4px solid rgb(255, 255, 255);
+    outline-offset: 10px;
+    margin-bottom: 5rem;
+}
+.reviewArrayItems > div:nth-child(14) {
+    color:rgb(241, 197, 0);
+    margin: 30px;
+    border: 1px solid black;
+    outline: 4px solid rgb(255, 255, 255);
+    outline-offset: 10px;
+    margin-bottom: 5rem;
+}
+.reviewArrayItems > div:nth-child(15) {
+    color:rgb(241, 197, 0);
+    margin: 30px;
+    border: 1px solid black;
+    outline: 4px solid rgb(255, 255, 255);
+    outline-offset: 10px;
+    margin-bottom: 5rem;
+}

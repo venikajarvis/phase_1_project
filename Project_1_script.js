@@ -18,8 +18,8 @@ const renderBestsellersList = (list) => {
             <h2>${list.book_title}</h2>
             <p>Link to article: ${list.url}</p>
             <p>Publication Date: ${list.publication_dt}</p>
-            <p>Reviewer (if available): ${list.byline}</p>
-            <p>Summary of Review (if available): ${list.summary}</p>
+            <p>Reviewer: ${list.byline}</p>
+            <p>Summary of Review: ${list.summary}</p>
         `
         reviewArrayItems.append(div);
     });
@@ -52,4 +52,4 @@ function createDeleteButton() {
         event.target.parentNode.remove();
     });
     return deleteCommentButton;
-}
+};
