@@ -39,10 +39,17 @@ const notes = document.querySelector("#comments-on-reviews");
 function newComment(comment) {
     const list = document.querySelector("#added-comments");
     const item = document.createElement("li");   
-    const deleteCommentButton = document.createElement("p");
-    deleteCommentButton.style = "display:inline";
-    deleteCommentButton.innerText = "✖️";
+    const deleteCommentButton = createDeleteButton();
     item.innerText = comment;
     item.append(deleteCommentButton);
     list.append(item);
     };
+
+function createDeleteButton() {
+    const deleteCommentButton = document.createElement("span");
+    deleteCommentButton.innerText = "✖️";
+    deleteCommentButton.addEventListener("click", (event) => {
+        event.target.parentNode.remove();
+    });
+    return deleteCommentButton;
+}
