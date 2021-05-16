@@ -1,0 +1,79 @@
+nytimes API:
+    API Access Key: HrjUV85s5oB3yvo20g4iS2hR8VBg4WD9
+    App ID: 042c7dd1-7a37-45f5-8a3f-f25bd13e4d01
+    Secret: MsMFlYj6qBFup426
+    Base URL: https://api.nytimes.com/svc/mostpopular/v2
+Links:
+    Bestsellers List of Toni Morrison's Books: https://api.nytimes.com/svc/books/v3/reviews.json?author=Toni+Morrison&api-key=HrjUV85s5oB3yvo20g4iS2hR8VBg4WD9
+    Git Repo: https://github.com/venikajarvis/phase_1_project
+
+
+
+JS 
+L1-L6: Add event listener for DOMContentLoaded; event that allows items called below it, appear when DOM content is loaded w/o waiting for images, stylesheets, etc.
+
+L8: create function to fetch API data
+L8: create fetch request which returns a promise; (fetch takes one arguement & argument = path to what is being fetched)
+    L9: promise is resolved with a response object - callback function created to take in response object (JSON (giant string that trasmits data 
+        over internet)) .json() takes JSON and turns it into JS Object 
+    L10-L11: After Parsing response body on the response object, we'll have data to render Bestsellers List's objects to the page; using dot notation to access the results array
+L14: Define renderBestsellersList as a function 
+    L15: choose which array items to render to page & in html doc, create reference to these array items
+    L16: iterate over book reviews & invoke a callback function for each iteration that will pass in individual object & create elements to be added to container.
+    L17: assign variable to the creation of new element
+    L18-L23: innerhtml used to render the book reviews iterated - as each div is being iterated over, the input of the accessed property will show under new divs
+    L24: inserts a set of Node objects or DOMString objects after the last child of the Element
+    L25: Enclose the .map function and map
+    L26: Enclose the renderBestsellersList function
+
+L28: assign the comments-on-reviews id to the variable name "notes"
+    L29: submit event listener added to notes
+    L30: .preventDefault sttops event from trying to make requests & reloading the page after submit is pressed
+    L31: assign the comment-input id to the variable name "input"
+    L32: if a value is put in, 
+    L33: Allows user input to be appended to list
+    L34: reset inputs in the field form when submit event takes place
+    
+L38: function created for new comments
+    L39: assign the added comments id to the variable name "list" = the ul element
+    L40: assign the user entered text the variable name "item" = creation of new ul element
+    L41: assign createDeleteButton function to variable name "deleteCommentButton"
+    L42: set tge innner text of li to the input.value
+    L43: append the delete button
+    L44: append the new li to the existing ul
+
+L47: function to create delete button for user added comments
+    L48: assign delete button to a span tag which will keep it in line with added comments
+    L49: create delete button
+    L50: create event listener when delete button is clicked
+    L51: delete item's delete button is clicked, it is removed from the list
+    L53: allows deleteCommentButtonto be utilized
+
+HTML
+L1-L10: Standard HTML w/ DOCTYPE, the language used and the opening & closing header tag
+    L7: Title displayed in tab of webpage
+    L8-L9: links to the bulma stylesheet and my Project_1_style stylesheet
+L12-L46: Body tag defining body's document
+    L13-L19: Bulma Hero component of a full width banner - hero is the main container and hero-body is the direct child that title content goes into
+
+    L21-L25: Div container created for youtube video
+    L27-L29: Div container creater for the section housing the comment box's header
+    L31-L34: Form for users to submit comments
+        L31: id for form and autocomplete removed for previous entries
+        L32: styling for comment field, id, name (reference for wgeb data is submitted), type and placeholder
+        L33: submit button
+    L36-L41: div container for notes inputted by user containf id, class for entire section of future notes, header and id for user inputs
+    L43: dic container for items pulled from JSON file
+    L45: script source pulling from JS file
+L48-L54: Bulma Footer with bottom padding
+
+CSS
+L1-L3: change background color of body black
+L5-L10: reposition youtube video (absolute = positioned relative to its first positioned ancestor element - disappears w/o it)
+L12-L14: changes font size of title above comment box
+L16-L18: changes font size of comment box placeholder
+L20-L22: changes color of submitted comments titled area
+L24-L27: changes font size and text color of add comment box
+L29-L31: changes color of submitted comments
+L33-L39: div for each array item pulled from JSON: letter colors changed, font size, margin & margin-bottom, border & outline-offset
+L42-L44: chnaged font size of footer text

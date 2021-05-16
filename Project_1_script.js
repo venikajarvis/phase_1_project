@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
     fetchBestsellersList();
     renderBestsellersList();
     newComment();
+    createDeleteButton();
 });
 
 const fetchBestsellersList = () => {
