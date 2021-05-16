@@ -15,10 +15,10 @@ const renderBestsellersList = (list) => {
     list.map((list) => {
         const div = document.createElement("div");
         div.innerHTML = `
-            <h2>Link to article: <a href="${list.url}">${list.book_title}</a></h2>
+            <h2>Link to Book Review: <a href="${list.url}">${list.book_title}</a></h2>
             <p>Publication Date: ${list.publication_dt}</p>
-            <p>Reviewer: ${list.byline}</p>
-            <p>Summary of Review: ${list.summary}</p>
+            <p>Reviewer: ${list.byline ? list.byline : "N/A"}</p>
+            <p>Summary of Review: ${list.summary ? list.summary : "N/A"}</p>
         `
         reviewArrayItems.append(div);
     });

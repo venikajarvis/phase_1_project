@@ -2,11 +2,6 @@ head {
     color:darkcyan; font: size 32px;
 }
 
-#list-of-notes {
-    text-align: justify;
-    color:white;
-}
-
 body {
     background-color: black; font: size 16px;
 }
@@ -14,9 +9,30 @@ body {
 .youtubeVid {
     position: absolute;
     margin: auto;
-    top: 25%;
+    top: 40%;
     left: 70%;
     transform: translate(-50%, -50%);
+}
+
+#comment-box-title-intro {
+    font-size: 40px;
+}
+
+#comment-input {
+    font-size: 20px;
+}
+
+#list-of-notes {
+    text-align: justify;
+    color:rgb(241, 197, 0);
+}
+
+#submit-button {
+    font-size: 30px;
+}
+
+#added-comments {
+    font-size: 20px;
 }
 
 .reviewArrayItems > div:nth-child(1),div:nth-child(2),div:nth-child(3),div:nth-child(4),div:nth-child(5),div:nth-child(6),div:nth-child(7),div:nth-child(8),div:nth-child(9),div:nth-child(10),div:nth-child(11),div:nth-child(12),div:nth-child(13),div:nth-child(14),div:nth-child(15) {
@@ -25,4 +41,5 @@ body {
     border: 1px solid black;
     outline-offset: 10px;
     margin-bottom: 2.5rem;
+    font-size: 20px;
 }
