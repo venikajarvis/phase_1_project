@@ -6,9 +6,6 @@ head {
     text-align: justify;
     color:white;
 }
-/* .reviewArrayItems {
-    color:white;
-  } */
 
 body {
     background-color: black; font: size 16px;
@@ -17,8 +14,8 @@ body {
 .youtubeVid {
     position: absolute;
     margin: auto;
-    top: 50%;
-    left: 50%;
+    top: 25%;
+    left: 70%;
     transform: translate(-50%, -50%);
 }
 

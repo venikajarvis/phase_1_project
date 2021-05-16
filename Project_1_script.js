@@ -15,16 +15,14 @@ const renderBestsellersList = (list) => {
     list.map((list) => {
         const div = document.createElement("div");
         div.innerHTML = `
-            <h2>${list.book_title}</h2>
-            <p>Link to article: ${list.url}</p>
+            <h2>Link to article: <a href="${list.url}">${list.book_title}</a></h2>
             <p>Publication Date: ${list.publication_dt}</p>
             <p>Reviewer: ${list.byline}</p>
             <p>Summary of Review: ${list.summary}</p>
         `
         reviewArrayItems.append(div);
     });
-
-}
+};
 
 const notes = document.querySelector("#comments-on-reviews");
     notes.addEventListener("submit", (event) => {
@@ -34,7 +32,7 @@ const notes = document.querySelector("#comments-on-reviews");
           newComment (input.value);
           event.target.reset();
         }
-      });
+});
 
 function newComment(comment) {
     const list = document.querySelector("#added-comments");
@@ -43,7 +41,7 @@ function newComment(comment) {
     item.innerText = comment;
     item.append(deleteCommentButton);
     list.append(item);
-    };
+};
 
 function createDeleteButton() {
     const deleteCommentButton = document.createElement("span");
@@ -53,3 +51,4 @@ function createDeleteButton() {
     });
     return deleteCommentButton;
 };
+
